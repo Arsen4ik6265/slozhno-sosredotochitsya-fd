@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 .header {
@@ -316,10 +317,6 @@
   .section__rt {
     grid-column: 1/5;
     margin-inline-start: -20px;
-  }
-
-  .section__title-special {
-    margin-block-start: 77px;
   }
 
   .section__subtitle-text {
