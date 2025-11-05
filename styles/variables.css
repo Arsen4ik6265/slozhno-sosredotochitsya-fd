@@ -1,14 +1,18 @@
 :root {
-  /* Тёмная тема по умолчанию */
-  --accent-color: #ff0070;
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --card-title-color: #000028;
-  --button-hover-color: #FF007066;
+  --font-family: "IBM Plex Mono", Monospace;
+  --main-title-color: #db00ff;
+  --title-text-color: #000028;
+  --main-color-text: #f1b2ce;
+  --primary-color: #ff0070;
+  --decorated-color: #ff0070;
   --page-background-image: url("../images/cover-image-dark.png");
-  
-  /* Шрифты */
-  --main-font: "IBM Plex Mono", Monospace;
+  --bg-color: #000028;
+  --button-hover-color: #ff007066;
+  --button-color: #ff0070;
+  --title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
-  
+@media (width >= 768px) {
+  :root {
+    --title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
